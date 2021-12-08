@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hoc js</title>
+</head>
+<body>
+<p> chọn 1 chiếc xe trong danh sách sau</p>
+
+<select id="chonxe" onchange="myFunction()">
+  <option value="Kia morning"> Kia morning</option>
+  <option value=" mescedes s450"> mescedes s450</option>
+  <option value=" kia cearato"> kia cearato</option>
+</select>
+
+<p id="gara"></p>
+
+<script>
+ function myFunction() {
+   var x = document.getElementById("chonxe").value;
+   document.getElementById("gara").innerHTML = "bạn đã chọn:" + x;
+   alert("chắc chưa");
+ }
+
+</script>
+</body>
+</html>
+
+
