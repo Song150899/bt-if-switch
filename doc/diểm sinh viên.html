@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+ let vatLy;
+ let hoaHoc;
+ let  sinhHoc;
+// prompt
+ vatLy=prompt('diem vat ly');
+ hoaHoc=prompt(' điểm hóa ');
+ sinhHoc=prompt('điểm sinh');
+
+// quy đổi từ chuỗi sang số
+vatLy=parseInt(vatLy);
+ hoaHoc=parseInt(hoaHoc);
+ sinhHoc=parseInt(sinhHoc);
+
+ let dtb= (vatLy + hoaHoc + sinhHoc)/3;
+ let tong=vatLy+hoaHoc+sinhHoc;
+
+ alert('điểm tổng= '+tong);
+</script>
+
+</body>
+</html>
