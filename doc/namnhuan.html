@@ -5,6 +5,29 @@
   <title>tính năm nhuận</title>
 </head>
 <body>
+<script>
+  let nam = +prompt(' Nhập số năm');
+  let lanamnhuan = false;
+  let chiahetcho4 = nam % 4 == 0;
+  if (chiahetcho4) {
+    let chiahetcho100 = nam % 100 == 0;
+    if (chiahetcho100) {
+      let chiahetcho400 = nam % 400 == 0;
+      if (chiahetcho400) {
+        lanamnhuan = true;
+      }
+    } else {
+      lanamnhuan = true;
+    }
+  }
+  if (lanamnhuan) {
+    alert(nam + ' là năm nhuận');
+  } else {
+    alert(' không phải là năm nhuận')
+  }
+
+
+</script>
 
 </body>
 </html>
