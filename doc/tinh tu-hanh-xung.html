@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tính tứ hành xung, tam hợp</title>
+</head>
+<body>
+<script>
+  let a;
+  let b;
+  let c;
+  let d;
+  let e;
+  a = +prompt(' Nhập năm sinh của Nam');
+  b = +prompt('nhập năm sinh của nữ');
+  c = 4
+  d = 3
+  e = 12
+
+  if ((a - b) % c == 0 || (b - a) % c == 0) {
+    if ((a - b) % e == 0) {
+      alert(' Chưa xác định được');
+    } else {
+      alert('Nam và nữ là tam hợp')
+    }
+
+  } else if ((a - b) % d == 0 || (b - a) % d == 0) {
+    if ((a - b) % e == 0) {
+      alert(' Chưa xác định được')
+    } else {
+      alert(" nam và nữ là tứ xung")
+    }
+  }
+  else {
+    alert( ' Hỏi thầy bói. Ahihi')
+  }
+
+
+</script>
+
+</body>
+</html>
